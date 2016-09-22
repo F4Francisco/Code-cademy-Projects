@@ -1,2 +1,2 @@
-# Code-cademy-Projects
-Codecademy Projects 
+# JavaScript-Code-cademy-Projects
+JavaScript Codecademy Projects 
