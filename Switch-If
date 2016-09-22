@@ -1,0 +1,29 @@
+var user = prompt("How are you?(Yes,No,Maybe)");
+//Gets users input capitalized
+user.toUpperCase()
+
+switch(user){
+    case ("Yes"||"YES"):
+        if(user == "Yup" && "Sure") {
+            console.log("Is that a YES!?");
+        }else{
+            console.log("Let us begin!");
+        }
+         break;
+    case ("No"||"NO"):
+            if(user == "Nope" || "No thanks") {
+                console.log("Is that a NO!?");
+            }else{
+                console.log("What a shame...");
+            }
+         break;
+    case ("Maybe"||"MAYBE"):
+            if (user == "IDK"||"Im not sure"){
+                console.log("What is this IDK?!");
+            }else{
+                console.log("There is still time to think..");
+            }
+         break;
+    default:
+        console.log("I shall wait.");
+}
