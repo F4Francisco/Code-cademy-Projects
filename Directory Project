@@ -1,0 +1,31 @@
+var friends = {};
+friends.bill = {
+  firstName: "Eric",
+  lastName: "Gates",
+  number: "(202) 555-5555",
+  address: ['One Penn Plaza','New York','NY','98052']
+};
+friends.steve = {
+  firstName: "Steve",
+  lastName: "Robertos",
+  number: "(222) 555-5555",
+  address: ['392 Clay Place','Brooklyn','NY','11221']
+};
+
+var list = function(obj) {
+  for(var prop in obj) {
+    console.log(prop);
+  }
+};
+
+var search = function(name) {
+  for(var prop in friends) {
+    if(friends[prop].firstName === name) {
+      console.log(friends[prop]);
+      return friends[prop];
+    }
+  }
+};
+
+list(friends);
+search("Steve");
